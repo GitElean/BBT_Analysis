@@ -1,4 +1,5 @@
 import BBT_dac as dac
+import BBT_dp as dp
 
     # Create a sample binary tree
     #     1
@@ -14,6 +15,12 @@ root.left.right = dac.TreeNode(5)
 
 #Verfica si el árbol esta balanceado
 if dac.is_balanced(root):
+    print("The binary tree is balanced.")
+else:
+    print("The binary tree is not balanced.")
+
+#Verificacion para programacion dinamica
+if dp.is_balanced(root):
     print("The binary tree is balanced.")
 else:
     print("The binary tree is not balanced.")
